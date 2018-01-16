@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <router-link to="/home">首页</router-link>
-      <router-link to="/mine">我的</router-link>
-    </div>
-    <router-view/>
+   <router-view></router-view>
+    <van-tabbar v-model="active">
+        <van-tabbar-item icon="shop" info='5' to='/home'>首页</van-tabbar-item>
+        <van-tabbar-item icon="chat" dot to='/mine'>我的</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 
 <script>
+import router from './router'
+
 export default {
-  name: 'App'
+    name: 'App',
+    data() {
+        return {
+            active: 0
+        }
+    },
+    router,
 }
 </script>
 
@@ -22,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
