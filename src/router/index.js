@@ -18,6 +18,12 @@ export default new Router({
       path: '/mine',
       name: 'mine',
       component: require('@/components/test/Mine').default
+    },
+    // 项目
+    {
+      path: '/main',
+      name:'main',
+      component: require('@/components/Main/Main').default
     }
   ]
 })

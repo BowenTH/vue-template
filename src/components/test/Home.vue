@@ -1,6 +1,10 @@
 <template>
     <div>
         <span id="note">{{ data }} {{userInfo.age}}</span>
+        <router-link to="/Main">
+            <el-button type="primary" plain>去首页</el-button>
+        </router-link>
+        <router-view class="main"></router-view>
     </div>
 </template>
 
@@ -45,5 +49,10 @@ div{
     #note{
         color: rgb(7, 233, 158);
     }
+}
+
+.main{
+    background-color: #888;
+    height: 100%;width: 100%;
 }
 </style>
