@@ -2,7 +2,7 @@
     <div>
         <span id="note">{{ data }} {{userInfo.age}}</span>
         <router-link to="/Main">
-            <el-button type="primary" plain>去首页</el-button>
+            <el-button type="primary" plain @click="setSigalPage(true)">去首页</el-button>
         </router-link>
         <router-view class="main"></router-view>
     </div>
@@ -36,6 +36,9 @@
             ...mapState([
                 'userInfo','login'
             ])
+        },
+        methods:{
+            ...mapMutations([ 'setSigalPage'])
         }
         // 另一种引入方式
         // mapState({

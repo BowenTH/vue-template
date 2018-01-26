@@ -9,9 +9,15 @@ const state = {
     sigalPage:false, //全屏
 }
 
+const mutations= {
+    setSigalPage(state,flag){
+        state.sigalPage = flag
+    }
+}
+
 export default new Vuex.Store({
     state,
     // getters,
     // actions,
-    // mutations,
+    mutations,
 })

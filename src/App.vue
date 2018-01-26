@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
+    <img v-if="!sigalPage" src="./assets/logo.png">
+    <div v-if="!sigalPage">
       <router-link to="/home">首页</router-link>
       <router-link to="/mine">我的</router-link>
       {{sigalPage}}
