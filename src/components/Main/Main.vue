@@ -143,6 +143,12 @@ export default {
             }).then(({ value }) => {
                 
             }).catch(() => {});
+        },
+        handleOpen(key, keyPath) {
+            console.log(key, keyPath);
+        },
+        handleClose(key, keyPath) {
+            console.log(key, keyPath);
         }
     }
 }
