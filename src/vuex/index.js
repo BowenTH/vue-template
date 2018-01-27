@@ -6,7 +6,7 @@ Vue.use(Vuex)
 const state = {
     userInfo : { name: 'bowen',age: 16 },
     login: false,
-    sigalPage:false, //全屏
+    sigalPage:true, //全屏
 }
 
 const mutations= {

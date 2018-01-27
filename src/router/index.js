@@ -23,7 +23,17 @@ export default new Router({
     {
       path: '/main',
       name:'main',
-      component: require('@/components/Main/Main').default
+      component: require('@/components/Main/Main').default,
+      children:[{
+        path:'/gruid',
+        component:require('@/components/test/Home').default
+      },{
+        path:'/components',
+        component:require('@/components/test/Mine').default
+      },{
+        path:'/source',
+        component:require('@/components/test/Mine').default
+      }]
     }
   ]
 })

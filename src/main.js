@@ -12,11 +12,12 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
 Vue.use(ElementUI)
-
+//TODO hello
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  mounted:()=>{ console.log('hello mounted')}
 })
