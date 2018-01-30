@@ -25,15 +25,26 @@ export default new Router({
       name:'main',
       component: require('@/components/Main/Main').default,
       children:[{
-        path:'/gruid',
+        path:'/main/gruid',
         component:require('@/components/test/Home').default
       },{
-        path:'/components',
+        path:'/main/components',
         component:require('@/components/test/Mine').default
       },{
-        path:'/source',
+        path:'/main/source',
         component:require('@/components/test/Mine').default
-      }]
+      },
+      {
+        path:'/main/flex',
+        component: require('@/components/type/flex').default
+      },{
+        path:'/main/font',
+        component: require('@/components/type/font').default
+      },{
+        path:'/main/button',
+        component:require('@/components/type/myButton').default
+      }
+    ]
     }
   ]
 })
