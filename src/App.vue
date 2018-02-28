@@ -1,9 +1,5 @@
 <template>
   <div>
-    <!-- <h1>App.vue</h1>
-    <span>{{userInfo}}</span>
-    <router-link to="/login" tag="button">login</router-link>
-    <router-link to="/home" tag="button">home</router-link> -->
     <transition name="router-fade" mode="out-in">
 			<router-view ></router-view>
 		</transition>
@@ -20,25 +16,15 @@ export default {
         ])
     },
   mounted: function(){
-    this.waitAsync()
+
   },
   methods: {
-    testAsync(){
-      return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-          resolve('hello get')
-        },4000)
-      })
-    },
-    async waitAsync(){
-      const v1 = await this.testAsync()
-      console.log(v1)
-    }
+    
   }
 }
 </script>
 
-<style>
+<style scoped lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -9,3 +9,9 @@
 3. 右侧暂满半屏
 
 4. 底部居中提示
+
+----
+
+* emoji.js
+ > 笑脸符号，emoji.random()
+* mock.js

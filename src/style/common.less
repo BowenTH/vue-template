@@ -6,3 +6,27 @@
     font-size: @font-size;
     background-color: @backgroundColor;
 }
+.setSlide(@location){
+    @{location}: 1px solid rgba(224, 224, 224, 0.5);
+}
+
+.el-header{
+    .setSlide(border-bottom);
+    .el-col{
+        text-align: center;
+        line-height: 60px;
+    }
+}
+.el-main{
+    padding: 0;
+}
+.el-footer,.el-footer{
+    .setSlide(border-top);
+    // border-top: 1px solid rgba(224, 224, 224, 0.5);
+}
+
+.el-aside{
+    .aside-cell{
+        height: calc(70vh);
+    }
+}
